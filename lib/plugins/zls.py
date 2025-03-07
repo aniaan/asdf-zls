@@ -13,8 +13,8 @@ PLUGIN = Plugin(
     name="zls",
     cmd="zls",
     repo_name="zigtools/zls",
-    filename_template="zls-{arch}-{platform}.tar.xz",
-    checksum_filename_template="https://builds.zigtools.org/zls-{platform}-{arch}-{version}.tar.xz.minisig",
+    filename_template="zls-{platform}-{arch}-{version}.tar.xz",
+    checksum_filename_template="{filename}.minisig",
     bin_path="zls",
     platform_map={
         "darwin": "macos",
